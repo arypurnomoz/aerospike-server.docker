@@ -9,8 +9,7 @@ RUN \
   && apt-get install -y python logrotate wget \
   && tar zxf /tmp/aerospike.tgz -C /tmp \
   && dpkg -i /tmp/aerospike*/*.deb \
-  && rm -rf /tmp/aero* \
-  && mkdir /etc/aerospike
+  && rm -rf /tmp/aero*
 
 VOLUME ["/opt/aerospike/data"]
 
