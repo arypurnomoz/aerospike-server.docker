@@ -21,4 +21,4 @@ VOLUME ["/opt/aerospike/data"]
 
 EXPOSE 3000 3001 3002 3003
 
-ENTRYPOINT ["/usr/bin/asd","--foreground"]
+ENTRYPOINT ["/tmp/run.sh"]
