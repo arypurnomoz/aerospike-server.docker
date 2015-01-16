@@ -19,6 +19,8 @@ VOLUME ["/opt/aerospike/data"]
 # 3002 – mesh port, for cluster heartbeat
 # 3003 – info port
 
+ADD run.sh /tmp/run.sh
+
 EXPOSE 3000 3001 3002 3003
 
 ENTRYPOINT ["/tmp/run.sh"]
