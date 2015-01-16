@@ -7,7 +7,7 @@ RUN \
   && apt-get upgrade -y \
   && apt-get -f install \
   && apt-get install -y python logrotate wget \
-  && tar zxf /tmp/aerospike.tgz -C /tmp
+  && tar zxf /tmp/aerospike.tgz -C /tmp \
   && dpkg -i /tmp/aerospike*/*.deb \
   && rm -rf /tmp/aero* \
   && mkdir /etc/aerospike
